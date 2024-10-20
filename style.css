@@ -1,0 +1,242 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte da página */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #121212; /* Define a cor de fundo da página */
+    color: #ffffff; /* Define a cor do texto padrão */
+}
+
+header, footer {
+    background-color: #000000; /* Define a cor de fundo do cabeçalho e rodapé */
+}
+
+#h1 {
+    color: #007bff; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 2.5rem; /* Define um tamanho de fonte maior */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+#h1:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
+h1, h2 {
+    color: #007bff; /* Define a cor do texto dos títulos */
+    text-align: center; /* Centraliza os títulos */
+}
+
+#about, #services, #testimonials {
+    padding: 20px; /* Define o padding das seções sobre e serviços */
+    background-color: #1f1f1f; /* Define a cor de fundo para um tom de cinza escuro */
+    border-radius: 10px; /* Adiciona bordas arredondadas a essas seções */
+    margin-bottom: 30px;
+}
+
+#about h2, #services h2, #testimonials h2, #contact h2 {
+    padding: 20px;
+    color: #ffffff; /* Define a cor do texto dos títulos nessas seções */
+    text-shadow: 2px 2px 4px #007bff; /* Adiciona sombra ao texto dos títulos */
+    text-align: center; /* Centraliza os títulos */
+}
+
+p {
+    color: #ffffff; /* Define a cor do texto dos parágrafos */
+}
+
+.nav-link {
+    color: #ffffff !important; /* Define a cor dos links da navegação */
+    display: inline-block; /* Define o display como inline-block */
+    text-align: center; /* Centraliza o texto dos links */
+    width: 100%; /* Faz com que o link ocupe toda a largura do item de navegação */
+}
+
+.nav-link:hover {
+    color: #007bff !important; /* Define a cor dos links quando passamos o mouse por cima */
+}
+
+.btn-primary {
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Define a cor de fundo dos botões primários quando passamos o mouse por cima */
+}
+
+.swiper {
+    width: 100%; /* Define a largura do swiper */
+    height: 90vh; /* Define a altura do swiper */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites do swiper */
+}
+
+.swiper-slide {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    transition: transform 0.5s ease; /* Transição suave entre os slides */
+}
+
+.swiper-slide img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner */
+    height: 100%; /* Define a altura da imagem como 100% do contêiner */
+    object-fit: cover; /* Para garantir que a imagem cubra o slide sem distorção */
+    object-position: center; /* Centraliza a imagem */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 40px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    background-color: rgba(0, 123, 255, 0.7); /* Cor de fundo dos botões */
+    border-radius: 50%; /* Botões arredondados */
+    display: flex; /* Usado para centralizar o ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: #ffffff; /* Cor dos ícones */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 123, 255, 1); /* Cor do botão ao passar o mouse */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px; /* Tamanho dos ícones */
+    color: #ffffff; /* Cor dos ícones */
+}
+
+.swiper-pagination {
+    bottom: 10px; /* Posição dos indicadores */
+}
+
+.swiper-pagination-bullet {
+    width: 12px; /* Largura dos bullets */
+    height: 12px; /* Altura dos bullets */
+    background: rgba(0, 123, 255, 0.7); /* Cor de fundo dos bullets */
+    border-radius: 50%; /* Bullets arredondados */
+    margin: 0 5px; /* Espaçamento entre os bullets */
+    transition: background 0.3s; /* Transição suave de cor */
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff; /* Cor do bullet ativo */
+}
+
+#services-container .card {
+    background-color: #1f1f1f; /* Define a cor de fundo dos cartões de serviços */
+    border: none; /* Remove a borda dos cartões de serviços */
+    color: #ffffff; /* Define a cor do texto dos cartões de serviços */
+    border-radius: 10px; /* Adiciona bordas arredondadas a esses cartões */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
+}
+
+#services-container .card:hover {
+    transform: translateY(-10px); /* Elevação dos cartões ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5); /* Sombra dos cartões ao passar o mouse */
+}
+
+#services-container .card .card-title {
+    color: #007bff; /* Define a cor dos títulos dos cartões de serviços */
+    text-align: center; /* Centraliza o título dos cartões */
+}
+
+#services-container .card .card-text {
+    text-align: justify; /* Justifica o texto dos cartões */
+}
+
+#testimonial-container {
+    background-color: #1f1f1f; /* Define a cor de fundo do contêiner de testemunhos */
+    padding: 20px; /* Define o padding desse contêiner */
+    border-radius: 10px; /* Adiciona bordas arredondadas a esse contêiner */
+}
+
+#testimonial-container .card {
+    background-color: #1f1f1f; /* Fundo do card */
+    color: #ffffff; /* Define o texto como branco para contraste */
+    border: 1px solid #007bff; /* Borda azul para destacar */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+blockquote {
+    font-style: italic; /* Texto em itálico para destacar */
+    color: #d3d3d3; /* Cor cinza claro para boa legibilidade */
+    margin: 15px 0; /* Margem entre o texto e o rodapé */
+    padding-left: 10px; /* Espaçamento lateral */
+    border-left: 4px solid #007bff; /* Borda lateral azul */
+}
+
+blockquote footer {
+    font-size: 0.9em; /* Tamanho menor para o rodapé */
+    color: #ffffff; /* Texto do rodapé branco */
+    margin-top: 5px; /* Espaço acima do rodapé */
+}
+
+.card {
+    text-align: center; /* Centraliza o conteúdo do cartão */
+    margin: 15px 0; /* Espaçamento entre os cartões */
+}
+
+.card-body {
+    padding: 10px; /* Espaçamento interno no corpo do cartão */
+}
+
+.card-img-top {
+    width: 100px; /* Defina uma largura específica */
+    height: 100px; /* Defina uma altura específica */
+    border-radius: 50%; /* Torna as imagens redondas */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço disponível sem distorção */
+    margin: 0 auto; /* Centraliza a imagem dentro do cartão */
+}
+
+footer {
+    background-color: #000000; /* Fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+}
+
+footer h5 {
+    color: #007bff; /* Cor dos títulos */
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+footer .social-links {
+    padding: 0; /* Remove padding das listas */
+    margin-bottom: 15px; /* Espaçamento entre os grupos de links */
+}
+
+footer .social-links li {
+    margin: 0 10px; /* Espaço entre os itens da lista */
+}
+
+footer .social-links a {
+    text-decoration: none; /* Remove sublinhado */
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+footer ul {
+    padding-left: 0; /* Remove o padding esquerdo das listas */
+    list-style: none; /* Remove marcadores das listas */
+}
+
+footer p {
+    margin-top: 15px; /* Espaço acima do texto de copyright */
+}
+
+/* Estilo para ícones sociais (Font Awesome) */
+.fab {
+    margin-right: 5px; /* Espaço à direita dos ícones */
+}
+
+/* Responsividade para blocos de testemunhos */
+@media (max-width: 768px) {
+    #testimonial-container .card {
+        margin-bottom: 20px; /* Mais espaço entre os cartões */
+    }
+}

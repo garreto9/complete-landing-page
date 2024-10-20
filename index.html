@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <title>WolfCyberStack</title> <!-- Título da página -->
+
+    <!-- Fontes e CSS Externos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importa a fonte Roboto do Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> <!-- Importa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> <!-- Importa o CSS da biblioteca AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!-- Importa o CSS do Swiper.js -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o CSS personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Importa ícones do Font Awesome -->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>
+                <a href="/Turma-02/module02/activities/activity-02/index.html" id="h1">WolfCyberStack</a> <!-- Título da página que também é um link -->
+            </h1>
+            <nav>
+                <ul class="nav">
+                    <!-- Links de navegação para diferentes seções da página -->
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">Sobre</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Serviços</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link text-white">Testemunhos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Botão para acessar a seção de contato -->
+            <button class="btn btn-primary" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL (SLIDER) -->
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slides do slider com imagens -->
+            <div class="swiper-slide"><img src="images/image01.jpeg" alt="imagem01"></div>
+            <div class="swiper-slide"><img src="images/image02.jpeg" alt="imagem02"></div>
+            <div class="swiper-slide"><img src="images/image03.jpeg" alt="imagem03"></div>
+            <div class="swiper-slide"><img src="images/image04.jpg" alt="imagem04"></div>
+            <div class="swiper-slide"><img src="images/image05.jpg" alt="imagem05"></div>
+        </div>
+        <!-- Paginação e botões de navegação do slider -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="about" class="container my-5" data-aos="fade-up">
+        <h2>Sobre</h2>
+        <!-- Texto de apresentação do profissional -->
+        <p>Sou um profissional especializado em Segurança da Informação, com pós-graduação em Cibersegurança e atualmente me especializando em desenvolvimento Full Stack. Tenho um bom domínio do inglês e estou constantemente em busca de aprimoramento, com planos de obter certificações relevantes em breve. Já adquiri diversos certificados através de cursos e bootcamps, que fortaleceram minha base de conhecimento.</p>
+        <p>Ofereço uma combinação de expertise técnica, inovação e aprendizado contínuo. Estou comprometido em agregar valor aos projetos dos meus clientes, fornecendo soluções eficazes e seguras. Confie em mim para transformar suas ideias em realidade com segurança e eficiência.</p>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="services" class="container my-5" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <!-- Contêiner onde os serviços serão populados via JavaScript -->
+        <div id="services-container" class="row"></div>
+    </section>
+
+    <!-- SEÇÃO TESTEMUNHOS -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Testemunhos</h2>
+            <!-- Contêiner onde os testemunhos serão populados via JavaScript -->
+            <div id="testimonial-container" class="row"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contact" class="container my-5 text-white">
+        <h2>Contato</h2>
+        
+        <!-- Contêiner para mensagens de erro do formulário -->
+        <div id="error-container" style="display: none; color: red;"></div>
+
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required> <!-- Campo para o nome -->
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="exemplo@dominio.com" required> <!-- Campo para o e-mail -->
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="(00) 00000-0000" required> <!-- Campo para o telefone -->
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem aqui" required></textarea> <!-- Campo para a mensagem -->
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button> <!-- Botão de envio do formulário -->
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Redes Sociais</h5>
+                    <ul class="social-links list-unstyled">
+                        <!-- Links para as redes sociais -->
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com" target="_blank" class="text-white">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.twitter.com" target="_blank" class="text-white">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com" target="_blank" class="text-white">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-links list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/jeffsongarreto/" target="_blank" class="text-white">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/garreto9/" target="_blank" class="text-white">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Informações</h5>
+                    <ul class="list-unstyled">
+                        <!-- Links para informações adicionais do site -->
+                        <li><a href="#terms-of-service" class="text-white">Termos de Uso</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Política de Privacidade</a></li>
+                        <li><a href="#contact" class="text-white">Fale Conosco</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2024 WolfCyberStack. Todos os direitos reservados.</p> <!-- Direitos autorais -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Importa o JavaScript do Swiper.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Importa o JavaScript da biblioteca AOS -->
+    <script src="script.js"></script> <!-- Importa o JavaScript personalizado -->
+    
+</body>
+
+</html>
