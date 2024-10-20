@@ -25,11 +25,11 @@ Para visualizar o projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/garreto9/MaisPraTi.git
+   git clone https://github.com/garreto9/complete-landing-page.git
    ```
 2. **Navegue até o diretório do projeto:**
    ```bash
-   cd MaisPraTi\Turma-02\module02\activities\activity-02
+   cd complete-landing-page
    ```
 3. **Abra o arquivo `index.html` em um navegador web:**
    ```bash
